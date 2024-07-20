@@ -99,7 +99,7 @@ oder
 
     Template: feed-default
 
-im Beitrag feed.md eingestellt werden.
+im Beitrag `feed.md` eingestellt werden.
 
 ## Plugins
 
