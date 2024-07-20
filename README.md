@@ -2,13 +2,13 @@
 
 Dieses Theme basiert auf dem CSS-Framework **Bootstrap** und bildet eine grundlegende Basis für weitere Entwicklungen. Das Theme versucht alle implementierten Funktionen im Template auch sichtbar zu gestalten, wie beispielsweise:
 
-    - zufällige Affiliate-Links
-    - CTA in Beiträgen für Downloads oder sonstige Links
-    - Geo-Position für Localisierung von Events oder Orten
-    - individuelle Teaser-Breiten für hervorgehobene Beiträge
-    - Beiträge können auf die Startseite verschoben werden
-    - Beiträge und Kategorien können unendlich tief geschachtelt werden
-    - verwandte Beiträge werden über Schlagwort-Beziehungen angezeigt
+- zufällige Affiliate-Links
+- CTA in Beiträgen für Downloads oder sonstige Links
+- Geo-Position für Localisierung von Events oder Orten
+- individuelle Teaser-Breiten für hervorgehobene Beiträge
+- Beiträge können auf die Startseite verschoben werden
+- Beiträge und Kategorien können unendlich tief geschachtelt werden
+- verwandte Beiträge werden über Schlagwort-Beziehungen angezeigt
 
 ## Affiliates
 
