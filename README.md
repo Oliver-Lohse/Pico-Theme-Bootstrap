@@ -69,3 +69,7 @@ Beiträge die mit `Sticky: true` auf die Startseite geschoben werden, können un
 ## Plugins
 
 Das Theme nutzt das Plugin `TableOfContents`
+
+## Installation
+
+Kopieren Sie das Verzeichnis nach dem Download oder Clone in das Verzeichnis: `pico/theme` und passen den Parameter `theme: Pico-Theme-Bootstrap` in der `config.yml` entsprechend an, damit Pico das neue Theme starten kann.
