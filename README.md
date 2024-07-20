@@ -1,6 +1,6 @@
 # Pico-Theme-Bootstrap
 
-Dieses Theme basiert auf dem CSS-Framework **Bootstrap** und bildet eine grundlegende Basis für weitere Entwicklungen. Das Theme versucht alle implementierten Funktionen im Template auch sichtbar zu gestalten, wie beispielsweise:
+Dieses Theme basiert auf dem CSS-Framework **Bootstrap** und bildet eine grundlegende Basis für weitere Entwicklungen. Das Theme versucht alle implementierten Funktionen im Template auch sichtbar zu gestalten und soll damit eine Maximalausprägung demonstrieren, wie beispielsweise:
 
 - zufällige Affiliate-Links
 - CTA in Beiträgen für Downloads oder sonstige Links
@@ -9,6 +9,7 @@ Dieses Theme basiert auf dem CSS-Framework **Bootstrap** und bildet eine grundle
 - Beiträge können auf die Startseite verschoben werden
 - Beiträge und Kategorien können unendlich tief geschachtelt werden
 - verwandte Beiträge werden über Schlagwort-Beziehungen angezeigt
+- im Beitrag können weitere Beiträge des aktuellen Ordners angezeigt werden
 
 ## Affiliates
 
