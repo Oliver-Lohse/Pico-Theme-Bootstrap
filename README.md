@@ -21,7 +21,9 @@ Sie können beliebig viele Affiliates in der `pico-theme.yml` ablegen, die dann 
 
 ## CTA und Geo-Position
 
-Beiträge können zusätzliche CTA (Call to Actions) oder auch Geo-Koordinaten aufnehmen und durch das Theme anzeigen lassen. Der Metabereich der Beiträge wird daher wie folgt aufgebaut:
+Beiträge können zusätzliche CTA (Call to Actions) oder auch Geo-Koordinaten aufnehmen und durch das Theme anzeigen lassen. CTA-Links sind beispielsweise für Downloads sehr gut geeignet, während Geo-Verweise Locationen für Veranstaltungen und ähnliches anzeigen können.
+
+Der Metabereich der Beiträge wird daher wie folgt aufgebaut:
 
     ---
     Title:              Beitragstitel...
@@ -45,7 +47,7 @@ Beiträge können zusätzliche CTA (Call to Actions) oder auch Geo-Koordinaten a
     ...Beitragstext... ... ...
     ...
 
-Das Theme versucht bei CTA-Links automatisch ein passendes Icon zuzusteuern (z.B. GitHub.com,...). Geo-Daten können angegeben werden, wenn beispielsweise Locationen für Events im Beitrag erwähnung finden sollen.
+>In den meisten Fällen können die Attribute CTA und Geo weggelassen und erst nach Bedarf hinzugefügt werden.
 
 ## Sticky
 
