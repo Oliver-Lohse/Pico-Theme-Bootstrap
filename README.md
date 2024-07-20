@@ -10,6 +10,12 @@ Dieses Theme basiert auf dem CSS-Framework **Bootstrap** und bildet eine grundle
 - Beiträge und Kategorien können unendlich tief geschachtelt werden
 - verwandte Beiträge werden über Schlagwort-Beziehungen angezeigt
 - im Beitrag können weitere Beiträge des aktuellen Ordners angezeigt werden
+- Social-Bar für Instagram, GitHub, YouTube, Facebook, uvam.
+- abonierbarer RSS-Feed
+- 404 Error-Page
+- global_author statt einen dedizierten Autor im Text
+
+>Die Maximalausprägung kann bei Bedarf schrittweise reduziert werden, indem einige Funktionen deaktiviert werden.
 
 ## Affiliates
 
@@ -65,6 +71,21 @@ Beiträge können auf der Startseite nach oben geschoben werden, sofern diese mi
 ## Sticky - weights
 
 Beiträge die mit `Sticky: true` auf die Startseite geschoben werden, können unterschiedlich breit sein, je nach Beitragsbild kann die Gewichtung von 1 bis 12 in der `pico-theme.yml` individuell eingestellt werden. Selbes kann auch für **Kategorien** vorgegeben werden.
+
+## Social Bar
+
+Das Theme blendet eine Social-Bar mit Icons für:
+
+- Instagram
+- YouTube
+- Twitter
+- Xing
+- Twitter
+- RSS-Feed
+- Mail
+- GitHub
+
+im unteren Bereich ein.
 
 ## Plugins
 
