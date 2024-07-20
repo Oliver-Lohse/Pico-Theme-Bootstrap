@@ -1,3 +1,7 @@
 # Pico-Theme-Bootstrap
 
-Dieses Theme basiert auf dem CSS-Framework Bootstrap und bildet eine grundlegende Basis für weitere Entwicklungen. Das Theme versucht alle implementierten Funktionen im Template auch sichtbar zu gestalten.
+Dieses Theme basiert auf dem CSS-Framework **Bootstrap** und bildet eine grundlegende Basis für weitere Entwicklungen. Das Theme versucht alle implementierten Funktionen im Template auch sichtbar zu gestalten.
+
+## Affiliates
+
+Das Theme zeigt Affiliates in Kategorien und Beiträgen an. Affiliates werden in der Datei `pico-theme.yml` abgelegt, etwa so:
