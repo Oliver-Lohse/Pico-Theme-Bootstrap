@@ -49,6 +49,14 @@ Der Metabereich der Beiträge wird daher wie folgt aufgebaut:
 
 >In den meisten Fällen können die Attribute CTA und Geo weggelassen und erst bei Bedarf hinzugefügt werden.
 
-## Sticky
+## Sticky - Beitrag nach oben schieben
 
 Beiträge können auf der Startseite nach oben geschoben werden, sofern diese mit dem Status `Sticky: true` versehen sind.
+
+## Sticky - weights
+
+Beiträge die mit `Sticky: true` auf die Startseite geschoben werden, können unterschiedlich breit sein, je nach Beitragsbild kann die Gewichtung von 1 bis 12 in der `pico-theme.yml` individuell eingestellt werden.
+
+## Plugins
+
+Das Theme nutzt das Plugin `TableOfContents`
