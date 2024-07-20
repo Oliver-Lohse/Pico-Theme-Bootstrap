@@ -55,7 +55,7 @@ Beiträge können auf der Startseite nach oben geschoben werden, sofern diese mi
 
 ## Sticky - weights
 
-Beiträge die mit `Sticky: true` auf die Startseite geschoben werden, können unterschiedlich breit sein, je nach Beitragsbild kann die Gewichtung von 1 bis 12 in der `pico-theme.yml` individuell eingestellt werden.
+Beiträge die mit `Sticky: true` auf die Startseite geschoben werden, können unterschiedlich breit sein, je nach Beitragsbild kann die Gewichtung von 1 bis 12 in der `pico-theme.yml` individuell eingestellt werden. Selbes kann auch für **Kategorien** vorgegeben werden.
 
 ## Plugins
 
