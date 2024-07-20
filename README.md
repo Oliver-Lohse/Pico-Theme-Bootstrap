@@ -47,7 +47,7 @@ Der Metabereich der Beiträge wird daher wie folgt aufgebaut:
     ...Beitragstext... ... ...
     ...
 
->In den meisten Fällen können die Attribute CTA und Geo weggelassen und erst nach Bedarf hinzugefügt werden.
+>In den meisten Fällen können die Attribute CTA und Geo weggelassen und erst bei Bedarf hinzugefügt werden.
 
 ## Sticky
 
