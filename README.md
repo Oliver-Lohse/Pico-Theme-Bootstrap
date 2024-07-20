@@ -14,8 +14,10 @@ Das Theme zeigt Affiliates in Kategorien und Beiträgen an. Affiliates werden in
           url:
       
         - cta:
+          title:       ...
           ...
-          ...
+
+Sie können beliebig viele Affiliates in der `pico-theme.yml` ablegen, die dann zufällig auf der Webseite eingeblendet werden.
 
 ## CTA und Geo-Position
 
