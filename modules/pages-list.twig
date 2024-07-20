@@ -1,0 +1,29 @@
+{#------------------------------------------------------------------------------------------------------#}
+{# PageList                                                                                             #}
+{# --------                                                                                             #}
+{# Das Modul listet die im Verzeichnis befindlichen Beiträge auf. Diese Arbeit kann es mittels Plugin   #}
+{# oder mit Hilfe von Twig erledigen - du hast die Wahl.                                                #}
+{#------------------------------------------------------------------------------------------------------#}
+
+<!-- Posts in Dir -->
+    {% set url  = current_page.id %}
+    {% set path = "" %}
+
+    {% for section in url|split('/',-1) %}                                           {# 'bludit' + 'plugins' + 'folder' => 'bludit/plugins/folder' #}
+        {% set path = [path, section, '/']|join %}
+    {% endfor %}
+
+    {# so... #}
+
+    <h3>Weitere Beiträge</h3>
+    <hr>
+    {#{ pages | only(path) | navigation }#}                                         {# Nutzung mit Plugin #}
+
+    {# ...oder so #}
+
+    <ul class="page-list">
+        {% for page in pages(path)|sort_by("title") if not page.hidden %}           {# Nutzung ohne Plugin #}
+            <li><a href="{{ page.url }}" class="small">{{ page.title }}</a></li>
+        {% endfor %}
+    </ul>
+<!-- Posts in Dir -->

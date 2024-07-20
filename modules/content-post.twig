@@ -1,0 +1,46 @@
+{#------------------------------------------------------------------------------------------------------#}
+{# Post Content                                                                                         #}
+{# ------------                                                                                         #}
+{# Das Modul bereitet den eigentlichen Beitragscontent auf und zeigt diesen an.                         #}
+{#------------------------------------------------------------------------------------------------------#}
+
+<!-- Post-Content -->
+    <div class="container py-5">
+        <div class="row">
+
+            <div class="col-sm-3">
+                <img src="{{assets_url}}/{{meta.logo}}" class="img-fluid mb-3 rounded">
+
+                {% include 'modules/geo.twig' %}
+
+                {% include 'modules/cta.twig' %}
+
+                {% include 'modules/pages-list.twig' %}
+
+            </div>
+
+            <div class="col-sm-9">
+                <article>
+                <p class="lead">{{current_page.description}}</p>
+
+                <!-- TOC -->
+                <div class="my-5">
+                    <p class="fs-2">Inhalt</p>
+                    {{ toc }}
+                </div>
+                <!-- TOC -->
+
+                {{ content }}
+                <hr>
+                <p class="small"><span class="small text-muted">
+                    <i class="bi bi-calendar-fill"></i> &ensp; {{ current_page.meta.date|date('d.m.Y') }}          &ensp;
+                    <i class="bi bi-person-fill"></i> &ensp; {{ config.theme_config.global_author }} &ensp;
+                    <i class="bi bi-tags-fill"></i>   &ensp; {{ current_page.meta.tags|replace({',': ' '}) }}
+                </span></p>
+
+                </article>
+            </div>
+
+        </div>
+    </div>
+<!-- Post-Content -->

@@ -1,0 +1,66 @@
+{#------------------------------------------------------------------------------------------------------#}
+{# Footer                                                                                               #}
+{# ------                                                                                               #}
+{# Baut einen Footer bestehend aus vier Spalten aus den Datein: Impressum, Datenschutz, Meta und        #}
+{# Kontakt auf. Sollte eine dieser Datein fehlen, gibt das Modul eine Meldung mit Handlungsanweisung    #}
+{# aus.                                                                                                 #}
+{#------------------------------------------------------------------------------------------------------#}
+
+<!-- Footer -->
+<div class="container-fluid bg-secondary text-light py-5">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-3 small">
+                {% if pages["impressum"]["description"] is empty %}
+                    <div class="alert alert-primary">
+                    <p>Das Impressum fehlt. Legen Sie die Datei <code>impressum.md</code> an.</p>
+                    </div>
+                {% else %}
+                    <p>{{ pages["impressum"]["title"] }}</p>
+                    <hr>
+                    <p>{{ pages["impressum"]["description"]|markdown }}</p>
+                {% endif %}
+            </div>
+
+            <div class="col-sm-3 small">
+                {% if pages["datenschutz"]["description"] is empty %}
+                    <div class="alert alert-primary">
+                    <p>Der Datenschutz fehlt. Legen Sie die Datei <code>datenschutz.md</code> an.</p>
+                    </div>
+                {% else %}
+                    <p>{{ pages["datenschutz"]["title"] }}</p>
+                    <hr>
+                    <p>{{ pages["datenschutz"]["description"]|markdown }}</p>
+                {% endif %}
+            </div>
+
+            <div class="col-sm-3 small">
+                {% if pages["meta"]["description"] is empty %}
+                    <div class="alert alert-primary">
+                    <p>Der Meta fehlt. Legen Sie die Datei <code>meta.md</code> an.</p>
+                    </div>
+                {% else %}
+                    <p>{{ pages["meta"]["title"] }}</p>
+                    <hr>
+                    <p>{{ pages["meta"]["description"]|markdown }}</p>
+                {% endif %}
+            </div>
+
+            <div class="col-sm-3 small">
+                {% if pages["kontakt"]["description"] is empty %}
+                    <div class="alert alert-primary">
+                    <p>Der Kontakt fehlt. Legen Sie die Datei <code>kontakt.md</code> an.</p>
+                    </div>
+                {% else %}
+                    <p>{{ pages["kontakt"]["title"] }}</p>
+                    <hr>
+                    <p>{{ pages["kontakt"]["description"]|markdown }}</p>
+                    
+                {% endif %}
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Footer -->

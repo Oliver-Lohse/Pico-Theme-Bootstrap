@@ -1,0 +1,11 @@
+<!-- Geo -->
+    {% if current_page.meta.Geo %}
+        <div class="text-center">
+            <br>
+            <a href="{{current_page.meta.Geo.Link}}" target='new' title="{{ current_page.meta.Geo.Title }}">
+                <i class="bi bi-geo-alt-fill display-1 mb-0"></i>
+            </a>
+            <p class="small opacity-50 py-3"><span class="small">{{ current_page.meta.Geo.Description }}</span></p>
+        </div>
+    {% endif %}
+<!-- Geo -->

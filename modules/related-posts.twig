@@ -1,0 +1,51 @@
+{#------------------------------------------------------------------------------------------------------#}
+{# Releated Posts                                                                                       #}
+{# --------------                                                                                       #}
+{# Das Modul ermittelt über den gesamten Blog bzw. die Webseite, alle Beiträge, die mit dem aktuell     #}
+{# über ein Schlagwort in Verbindung stehen und listet diese auf.                                       #}
+{#------------------------------------------------------------------------------------------------------#}
+
+<!-- Releated Posts -->
+<div class="container-fluid bg-light">
+    <div class="container py-5">
+        <div class="row">
+    
+                {% set id_liste = "" %}                                                             {# Merk-Liste der Beiträge anlegen                     #}
+                {% if current_page.meta['Tags'] %}                                                  {# Hat der Post überhaupt Tags?                        #}
+                    <p class="lead text-center text-secondary mb-5">Weitere passende Beiträge</p>
+                    
+                    {% for tag1 in current_page.meta['Tags']|split(',') %}                          {# TAG-Liste der aktuellen Seite iterieren             #}
+                        {% for page in pages %}                                                     {# alle Blog-Seiten iterieren                          #}
+                            {% for tag2 in page.meta['Tags']|split(',') %}                          {# dortige TAGs iterieren                              #}
+                                {% if tag1|lower == tag2|lower and page.id != current_page.id %}    {# ist TAG der aktuellen Seite in Blogseite enthalten? #}
+                                    {% if page.id in id_liste %}                                    {# ist die gescannte Seite in der Liste?               #}
+                                                                                                    {# Wenn JA: mache nichts                               #}
+                                    {% else %}                                                      {# Wenn NEIN:                                          #}
+                                        {% set id_liste = [id_liste, ';', page.id]|join %}          {# füge den Beitrag 1x in die Merk-Liste ein, sofern   #}
+                                                                                                    {# er noch nicht in der Liste ist (Concatinate)        #}
+                                        <div class="col-sm-3 p-2">
+                                            <a rel="alternate" href="{{page.url}}" title="{{page.title}}">
+                                            <h3 class="fs-5">{{page.title}}</h3>
+                                            </a>
+                                            <p class="small opacity-50">
+                                                <span class="small">
+                                                    <i class="bi bi-folder-fill"></i> &ensp; {{ page.id|split('/')[0] }}
+                                                    <i class="bi bi-tags-fill"></i>   &ensp; {{ page.meta.tags|replace({',': ' '}) }}
+                                                </span>
+                                            </p>
+                                            <hr>
+                                            <p class="fs-6">{{page.description}}</p>
+                                        </div>
+
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
+
+                    {% endfor %}
+                {% endif %}
+    
+        </div>
+    </div>
+</div>
+<!-- Releated Posts -->

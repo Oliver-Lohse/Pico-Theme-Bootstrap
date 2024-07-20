@@ -1,0 +1,122 @@
+a {
+    color:              #3b9ab4;
+    text-decoration:    none;
+}
+
+.bg-primary {
+    background-color:   #3b9ab4 !important;
+}
+
+.btn-primary {
+    background-color:   #3b9ab4;
+    border:             1px solid #3b9ab4;
+    border-radius:      0px;
+    _border-left:        0px solid #ffffff;
+    _border-bottom:      10px solid #ffffff;
+    _border-right:       10px solid #3b9ab4;
+}
+
+/* --- Plugin: PageList --- */
+.is-active a{
+    color:              #333333;
+}
+.page-list {
+    font-size:          0.8em;
+    list-style:         none;
+    padding-left:       0em;
+}
+/* --- Plugin: PageList --- */
+
+blockquote {
+    border-left:        10px solid #3b9ab4;
+    border-radius:      4px;
+    padding-left:       1em;
+    font-weight:        lighter;
+}
+
+/* --- Textlinks --- */
+.link-inline {
+  	border: 			1px solid #3b9ab4;
+	padding-left: 		0.3em;
+	padding-right: 		0.3em;
+	border-radius: 		4px;
+	background-color: 	#3b9ab4;
+  	font-size: 			0.9em;
+	color:				#ffffff;
+  	_box-shadow: 		0px 0px 5px rgba(0,0,0,0.1);
+}
+.link-inline::after {
+  	content: 			'⇑';
+	top: 				-0.45em;
+	font-size: 			0.9em;
+	position: 			relative;
+	padding-left: 		0.2em;
+	color: 				#ffffff;
+}
+.link {
+	background-color:	rgba(235,235,235,0.3);
+  	padding: 			1em;
+	padding-right:      1.1em;
+  	color: 				GRAY;
+  	display: 			inline-block;
+  	margin:				0.3em;
+  	border-bottom:		2px solid #3b9ab4;
+  	margin-bottom:		2em;
+}
+.link::before {
+  content: 				'» ';
+}
+/* --- Textlinks --- */
+
+article h2 {
+  	margin-top: 		1.5em;
+  	margin-bottom: 		1em;
+}
+
+/* --- Code und Prevormatted --- */
+pre {
+    background-color: 	#333333 !important;
+    padding:            1em !important;
+    font-size:          0.8em;
+    color:              #ffffff;
+    border-radius:      4px;
+}
+/* --- Unterschrift unter Code Block --- */
+pre + p em {
+	display:            block;
+    font-size:          0.7em !important;
+    color:              GRAY !important;
+	padding-left:		1em;
+	margin-top:         -15px;
+}
+pre + p em::before {
+	content: 			'└ ';
+	color:              GRAY;
+}
+
+/* --- Sorgt dafuer, das Bilder im Beitrag zentriert und 'img-fluid' sind --- */
+article img {
+    display:            block; 
+    margin:             auto;
+    max-width:          98%;
+    height:             auto;
+    _background-color:   #4c5e70;
+    _background-color:   CadetBlue;
+    border-radius:      5px;
+    box-shadow: 0px 0px 5px #aaa;
+}
+/* --- Bildunterschriften unter einem Code-Block --- */
+article pre + p em {
+    display:            block;
+    font-size:          0.8em !important;
+    color:              var(--txt-light);
+    margin-left:        10px;
+    margin-top:         -15px;
+}
+/* --- Bildunterschriften unter dem Foto ohne Leerzeile mit Stern-Bildunterstrift-Stern markiert --- */
+article img + em {
+    display:            block;
+    font-size:          0.7em !important;
+    color:              var(--txt-light);
+    margin-left:        15px;
+}

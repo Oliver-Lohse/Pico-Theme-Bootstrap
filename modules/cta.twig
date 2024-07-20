@@ -1,0 +1,32 @@
+{#------------------------------------------------------------------------------------------------------#}
+{# CTA, Downloads, Links,...                                                                            #}
+{# ------------------                                                                                   #}
+{# Bietet einen Button für Downloads, Links und CTA an. Defür muss die folgende Meta-Struktur im        #}
+{# Beitrag eingebaut werden:                                                                            #}
+{#                                                                                                      #}
+{#     ...                                                                                              #}
+{#     CTA:                                                                                             #}
+{#         Title:       Titel des Link (Label auf dem Button)                                           #}
+{#         Link:        die URL                                                                         #}
+{#         Description: ein paar beschreibende Worte (unter dem Button)                                 #}
+{#     ...                                                                                              #}
+{#                                                                                                      #}
+{# Das Modul versucht anhand der URL die Zielplattform zu ermitteln, um ein passendes Icon auf dem      #}
+{# Button anzuzeigen. Die gängigsten Icons und Plattformen sind definiert.                              #}
+{#------------------------------------------------------------------------------------------------------#}
+
+<!-- CTA -->
+    {% if current_page.meta.CTA %}
+        <br>
+        <div class="text-center py-5">
+            <a href="{{ current_page.meta.CTA.Link }}" target='new' class="btn btn-primary btn-lg">
+                {% if 'github.com'    in  current_page.meta.CTA.Link|split('/') %} <i class="bi bi-github">   </i> &ensp; {% endif %}
+                {% if 'instagram.com' in  current_page.meta.CTA.Link|split('/') %} <i class="bi bi-instagram"></i> &ensp; {% endif %}
+                {% if 'facebook.com'  in  current_page.meta.CTA.Link|split('/') %} <i class="bi bi-facebook"> </i> &ensp; {% endif %}
+                {% if 'facebook.com'  in  current_page.meta.CTA.Link|split('/') %} <i class="bi bi-twitch">   </i> &ensp; {% endif %}
+                {{ current_page.meta.CTA.Title }}
+            </a>
+            <p class="small opacity-50 py-3"><span class="small">{{ current_page.meta.CTA.Description }}</span></p>
+        </div>
+    {% endif %}
+<!-- CTA -->

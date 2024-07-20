@@ -1,0 +1,19 @@
+{#------------------------------------------------------------------------------------------------------#}
+{# RSS-Feed Icon-Bar                                                                                    #}
+{# -----------------                                                                                    #}
+{# Zeigt die Icon-Bar (ein RSS-Icon) mit ein bisschen Text (was ist RSS) unter dem Icon an              #}
+{#------------------------------------------------------------------------------------------------------#}
+
+<!-- RSS Icon-Bar -->
+    <div class="container text-center fs-1 py-5">
+		{% if config.theme_config.social.rss %} 
+			<a href="{{config.theme_config.social.rss}}" title="RSS Feed Sticky" class="text-danger"> 
+				<img src="{{ theme_url }}/img/rss-fill.svg" height="100" class="text-danger mb-3">
+			</a> 
+		{% endif %}
+		<p class="lead">
+			mit <a href="https://de.wikipedia.org/wiki/RSS_(Web-Feed)">RSS-Feed</a>, beobachten<br>
+			Sie 'anonym' neue Artikel
+		</p>
+    </div>
+<!-- RSS Icon-Bar -->

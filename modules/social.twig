@@ -1,0 +1,15 @@
+
+<!-- Social -->
+    <div class="container text-center fs-1 py-5">
+		{% if config.theme_config.social.rss       %} <a href="{{config.theme_config.social.rss}}"         title="RSS Feed"> <img src="{{ theme_url }}/img/rss-fill.svg"      height="42"></a> {% endif %}
+    	{% if config.theme_config.social.youtube   %} <a href="{{config.theme_config.social.youtube}}"     title="YouTube">  <img src="{{ theme_url }}/img/youtube.svg"       height="42"></a> {% endif %}
+    	{% if config.theme_config.social.facebook  %} <a href="{{config.theme_config.social.facebook}}"    title="Facebook"> <img src="{{ theme_url }}/img/facebook.svg"      height="42"></a> {% endif %}
+    	{% if config.theme_config.social.instagram %} <a href="{{config.theme_config.social.instagram}}"   title="Instagram"><img src="{{ theme_url }}/img/instagram.svg"     height="42"></a> {% endif %}
+    	{% if config.theme_config.social.twitch    %} <a href="{{config.theme_config.social.twitch}}"      title="Twitch">   <img src="{{ theme_url }}/img/twitch.svg"        height="42"></a> {% endif %}
+    	{% if config.theme_config.social.twitter   %} <a href="{{config.theme_config.social.twitter}}"     title="Twitter">  <img src="{{ theme_url }}/img/twitter.svg"       height="42"></a> {% endif %}
+        {% if config.theme_config.social.xing      %} <a href="{{config.theme_config.social.xing}}"        title="Xing">     <img src="{{ theme_url }}/img/xing.svg"          height="42"></a> {% endif %}
+    	{% if config.theme_config.social.mail      %} <a href="mailto:{{config.theme_config.social.mail}}" title="Mail">     <img src="{{ theme_url }}/img/envelope-fill.svg" height="42"></a> {% endif %}
+    	{% if config.theme_config.social.link      %} <a href="{{config.theme_config.social.link}}"        title="Link">     <img src="{{ theme_url }}/img/link-45deg.svg"    height="42"></a> {% endif %}
+		{% if config.theme_config.social.github    %} <a href="{{config.theme_config.social.github}}"      title="GitHub">   <img src="{{ theme_url }}/img/github.svg"        height="42"></a> {% endif %}
+    </div>
+<!-- Social -->

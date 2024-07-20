@@ -1,0 +1,108 @@
+api_version: 3                           # Use Pico's latest API version for themes
+
+meta:                                    # Register meta headers used by this theme
+    Logo:          logo                  # The URL to your website's logo (value is passed to Pico's "url" Twig filter)
+    Tagline:       tagline               # Your website's tag line, shown right below your site title (supports Markdown)
+    Social:        social                # A list of social icons that will be shown in your website's footer; You must specify a "title", "url" and "icon" per entry
+
+twig_config:                             # Twig template engine config
+    autoescape:    html                  # Let Twig escape variables by default
+    strict_variables: false              # If set to true, Twig will bail out when unset variables are being used
+    charset:       utf-8                 # The charset used by Twig templates
+
+widescreen:        false                 # Use more horicontal space (i.e. make the site container wider)
+
+global_author:     Kontakt@Oliver-Lohse.de
+
+sticky:
+    heading:       true                  # aktiviert/deaktiviert die Überschrift
+    logo:          true                  # aktiviert/deaktiviert das Logo des hervorgehobenen Beitrags
+    weights:       [3,3,3,3,4,4,4,3]     # die Spalten-Gewichtung von 1 bis 12 (Bootstrap Style) des Beitrags für die Anzeige
+
+kategorie:
+    heading:       true                  # aktiviert/deaktiviert die Überschrift
+    logo:          true                  # aktiviert/deaktiviert das Logo der Kategorie
+    weights:       [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3] # Spalten-Gewichtung von 1 bis 12 (Bootstrap Style) für die Anzeige
+
+social:
+    instagram:     https://instagram.com/@vco1_de
+    youtube:       https://youtube.com/@vco1
+    mail:          Kontakt@Oliver-Lohse.de
+    facebook:
+    twitch:      
+    twitter:     
+    xing:          https://www.xing.com/profile/Oliver_Lohse022896/
+    link:          http://VCO1.de
+    rss:           https://cmsworkbench.de/feed
+    github:        https://github.com/Oliver-Lohse
+
+replacetoken:
+    primary:       das ist ein Beispieltext bzw. Beispielslogan
+    secondary:     ein zweiter Slogan
+    
+affiliate:
+    - cta: 
+      title:       Ohne Vorwissen zur eigenen Website mit WordPress 6
+      description: WordPress gibt es in zwei Versionen. Sie können entweder direkt auf wordpress.com einen Blog erstellen. Oder Sie laden sich Ihre WordPress-Version von wordpress.org herunter und erstellen Ihre Website auf dem eigenen Webspace. Und wie das geht, erfahren Sie in diesem WordPress-Einsteigerbuch. Zur Seite steht Ihnen der beliebte und erfahrene Trainer Peter Müller. Seit vielen Jahren hilft er mit seinen Büchern Einsteigern beim Erstellen eigener Webseiten, ob mit HTML und CSS oder mit WordPress.
+      logo:        https://m.media-amazon.com/images/I/71KO52tuOOL._SY466_.jpg
+      url:         https://www.amazon.de/Einstieg-WordPress-WordPress-Websites-erstellen-Schrittanleitungen/dp/3836298333?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=13CGTWDZYF5KP&dib=eyJ2IjoiMSJ9.FdvQIh-JQRGeSwA_Ems--NKMj9CEX3LmJB6ldSW2NvhZ5RBO6xpW9Hr95Tqi09ShSJkPL9zowtRLclXPo8Q5LQ_t0igJf5sr4E17_qBdleFIv36amejZdRQzY7zkckkIqMgAV_BwXGfUjNY4rYUVLu9t7hMVngrBW3Z9vBGf5SuAIHXLs7UGibWtNUhjwguz0d_asNHbKasI7_R_oiJdxiLhFim2amvMh4uZ9LyCpyg.qO7bDlPH7f8p9FYKbQwK2qwc7v8U1HHt0B7EgPuZrJo&dib_tag=se&keywords=wordpress+buch&qid=1720500760&sprefix=wordpress+buch%2Caps%2C114&sr=8-1&linkCode=ll1&tag=cmsworkbench-21&linkId=fe0adb67640b5668fd7da028f323bb73&language=de_DE&ref_=as_li_ss_tl
+      
+    - cta:
+      title:       PHP 8 und MySQL im perfekten Zusammenspiel
+      description: Dynamische Webseiten mit PHP und MySQL programmieren. Alles, was Sie dafür wissen müssen, steht in diesem Buch. Profitieren Sie von einer praxisorientierten Einführung und lernen Sie alle neuen Sprachfeatures von PHP 8 kennen. Die Autoren Christian Wenz und Tobias Hauser sind erfahrene PHP-Programmierer und Datenbankspezialisten. Sie zeigen Ihnen, wie Sie MySQL und andere Datenbanksysteme effektiv einsetzen. Mit diesem Wissen machen Sie sich rundum fit für dynamische Websites.
+      logo:        https://m.media-amazon.com/images/I/71S1L2AntIL._SY466_.jpg
+      url:         https://www.amazon.de/PHP-MySQL-umfassende-fortgeschrittenen-PHP-Programmierung/dp/3367100005?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1F0BTCTET959J&dib=eyJ2IjoiMSJ9.-VxYQYR8dGSGV_d1hPcf6YpPySB9mHFF8whBJUFzOhx2KO7u0LS6c1bosB2D-0kIAwixMboW3qCgqlK2kH2BU_0__rk2z2_2JOXanEtJOS5BNnfOyL7kdDTTSqwOR4fT1if2MkSPCHddr1nxH86hiXQFxmtWyU0t1a1iygZ1eKNKnzA3GpafJEvPUGwgud6CkG40Ag7NwDxogfMgeM2WwVHOcI7vNw-l4S7b19ScHxA.LLyfNjSNQvzU7Ix2If8aOoJr1Tj8Zk1lc_2RwQarR2E&dib_tag=se&keywords=php+buch&qid=1720501068&s=books&sprefix=php+buch%2Cstripbooks%2C117&sr=1-4&linkCode=ll1&tag=cmsworkbench-21&linkId=b6638e7f44e98ee76bb99fad5938523d&language=de_DE&ref_=as_li_ss_tl
+      
+    - cta:
+      title:       SEO-Wissen für erfolgreiches Online-Marketing - Komplett aktualisiert und erweitert
+      description: Die Suchmaschinen-Optimierung ist eine der wichtigsten Disziplinen im Online-Marketing. Wenn es Ihnen darum geht, für Ihre Webseite oder Ihren Webshop ein Top-Ranking in den SERPs zu erzielen, müssen Sie wissen, wie Suchmaschinen ticken und welche Stellschrauben Sie wie einstellen. Sebastian Erlhofers SEO-Handbuch ist für Ihre SEO-Ausbildung ein wichtiger Begleiter und ein Quell an Wissen, aus dem Sie Praxiswissen und Profitipps schöpfen.
+      logo:        https://m.media-amazon.com/images/I/71GSAN45FdL._SY466_.jpg
+      url:         https://www.amazon.de/Suchmaschinen-Optimierung-SEO-Standardwerk-Auflage-Praxiswissen-Profitipps/dp/383629169X?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=MSQDH3J7EAU1&dib=eyJ2IjoiMSJ9.O-S_NVxFUsO0BDh3ely7w_UkRdXRHO6fj7L2kzEk-6ylzkrlhBDlqXwj6sbqGRvBXAKHvp-agH7MZv9dp7W6uusqbA9lprYKCe5xEoXOq87Ksp18iGVCaiW54Hb0UYxbSOnulgOxT5MvqK45aS5MLpJBouakzT3j46v-NOX2bIKqbngB2tfOcq5R8fuFbVQh28oggznd-HtqYxcZNTcSrXwmrPVNRunWBcw7VHYsn1A.6QYPoC-Tm9KqAHc7s4Cn8SxYXp_7k9jtBIF_FNO9_Ws&dib_tag=se&keywords=seo+buch&qid=1720501272&s=books&sprefix=seo+buch%2Cstripbooks%2C135&sr=1-1&linkCode=ll1&tag=cmsworkbench-21&linkId=7aa6d899e082ae37d1f808a21d1c553b&language=de_DE&ref_=as_li_ss_tl
+      
+    - cta:
+      title:       COBOL - Altsysteme warten und erweitern. Das umfassende Praxis-Handbuch
+      description: Dieses Buch richtet sich an erfahrene Entwickler objektorientierter Sprachen wie C++ oder Java. Es vermittelt die Funktionsweise der Programmiersprache COBOL, um die in zahlreichen Implementierungen auf unterschiedlichen Plattformen immer noch produktiv laufenden COBOL-Programme zu verstehen, zu warten und bei Bedarf mit zusätzlichen Funktionalitäten zu erweitern. Dafür bietet es Ihnen sowohl eine grundlegende Einführung in die Programmierung mit COBOL als auch eine thematisch gegliederte Referenz der Befehle mit praktischen Beispielen.
+      logo:        https://m.media-amazon.com/images/I/91Q46AkVvhL._SY466_.jpg
+      url:         https://www.amazon.de/COBOL-Altsysteme-umfassende-Praxis-Handbuch-Professional/dp/3747506461?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=I9EMPTGBPPJD&dib=eyJ2IjoiMSJ9.n46VIiAe4HOdrSGmq2Igl6HI1zr8F51nRRj0yTfJDJFI1B8wSSY2zo4nwaiii3pm1k3iADA01eajUlEzLOFKUCI_C_jj7MjE3C1xZp1d1NY.Y9PO7HT2KpP5dYCFq03XZlo-PYocvqDQ5B9MCbJtRYg&dib_tag=se&keywords=cobol+altsysteme+buch&qid=1720501800&s=books&sprefix=cobol+altsysteme+buch%2Cstripbooks%2C109&sr=1-1&linkCode=ll1&tag=cmsworkbench-21&linkId=746312e75bf5e2c514374f78966c1ea6&language=de_DE&ref_=as_li_ss_tl
+
+    - cta:
+      title:       Moderne Frontend-Entwicklung mit React. Alles, was Sie über React wissen müssen!
+      description: Welcher Frontendentwickler hat noch nicht von React gehört? Diese ursprünglich von Facebook entwickelte JavaScript-Bibliothek hat innerhalb kurzer Zeit eine steile Karriere hingelegt. Sie bildet mittlerweile eine wichtige Grundlage für viele Unternehmensanwendungen, Single Page-Applikationen, sowie viele Apps für iPhone und Android. Erfahren Sie in diesem umfassenden Handbuch des JavaScipt-Experten Sebastian Springer, wie Sie performante Oberflächen gestalten. Mit einfachen und leicht verständlichen Beispielen erlernen Sie die Grundlagen von React, React Native und Redux. Und auch als fortgeschrittener JavaScript-Entwickler profitieren Sie von den vielen Profithemen wie Tests, Animationen, Material Design Components, Server Side Renderung über Debugging bis hin zur Entwicklung von vollständigen mobilen Anwendungen. Dieses Buch ist ein Muss für jeden JavaScript-Entwickler und für jeden, der React lernen möchte!
+      logo:        https://m.media-amazon.com/images/I/715Narue5mL._SY466_.jpg
+      url:         https://www.amazon.de/React-umfassende-Handbuch-Frontend-Entwicklung-Praxisbeispielen/dp/3836292548?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2EO6J5QSWSQR3&dib=eyJ2IjoiMSJ9.opgbem-Graeq-BUuj5Iq9FzJMKxIxYEhelxy_jlAkFgUrx3pQRnPsDQBJKy2ZawEcLr1YfLrR3FXy0PXxafL7jJUJ4NCeZ357Cwjfoy1LD1ohO_DQd-MRimmzBohBJinxOnKNy8W9HAs1J4q-G51Jma2gJ5_Dc10T3Qety066Zi9rqVk6izOz-0h7GyVilkkC39rHlmpdNcEmQYpVe7v1xudSGwL81VxKrmtA4wl8mE.DhhOTVz4t4JupO8UPcP9Z_tILjaa0FJ7qRdQ3FgQl8I&dib_tag=se&keywords=react+buch&qid=1720502030&s=books&sprefix=react+buch%2Cstripbooks%2C141&sr=1-1&linkCode=ll1&tag=cmsworkbench-21&linkId=3dd582043a4510051ab7c964dd96dfa6&language=de_DE&ref_=as_li_ss_tl
+      
+    - cta:
+      title:       JavaScript das umfassende Handbuch. JavaScript objektorientiert lernen und verstehen
+      description: Ein umfassender Einstieg in JavaScript, viele praktische Beispiele und eine Darstellung auch professioneller Techniken - all das zeichnet dieses unverzichtbare Handbuch aus. Es eignet sich sowohl für Anfänger, die JavaScript von Grund auf lernen, als auch für Fortgeschrittene und Profis, die wissen wollen, wie man moderne, dynamische Webanwendungen entwickelt. Hier finden Sie alle wichtigen Techniken - Ajax, jQuery, Node.js, DOM und mehr. Entdecken Sie die neuesten Trends, Techniken und Entwicklungen bis hin zur Steuerung von Microcontrollern. Machen Sie sich mit Objektorientierung, ECMAScript 21 und funktionaler Programmierung vertraut und profitieren Sie von zahlreichen praxisnahen Beispielen für den sofortigen Einsatz. Das perfekte Lehrbuch für moderne Webentwickler!
+      logo:        https://m.media-amazon.com/images/I/71fKM+aLpUS._SY466_.jpg
+      url:         https://www.amazon.de/JavaScript-umfassende-objektorientierter-funktionaler-Programmierung/dp/3836286297?pd_rd_w=wHWf5&content-id=amzn1.sym.d6531279-1f86-4ae1-b1f7-8ab9db04b1a0&pf_rd_p=d6531279-1f86-4ae1-b1f7-8ab9db04b1a0&pf_rd_r=T3PGR0WF0SYSG93AHEVN&pd_rd_wg=T3rf2&pd_rd_r=6b171bad-bfac-49ad-85dd-be46df34c546&pd_rd_i=3836286297&psc=1&linkCode=ll1&tag=cmsworkbench-21&linkId=e0c2eca8155462a677fd55ce53290089&language=de_DE&ref_=as_li_ss_tl
+      
+    - cta:
+      title:       Angular das große Handbuch zum JavaScript-Framework. Einführung und fortgeschrittene TypeScript-Techniken
+      description: Angular ist das JavaScript-Framework für professionelle Webapplikationen - hier lernen Sie es umfassend kennen! Christoph Höller macht Sie mit allen relevanten Technologien, Standards und Kernbestandteilen des Frameworks vertraut. Am Praxisbeispiel einer Projektverwaltung führt Ihnen der Webprofi die Komponenten und Konzepte von Angular vor. Formulare, Routing, HTTP-Anbindung und Testing - hier lernen Sie Schritt für Schritt, wie Sie eigene Angular-Webapplikationen erstellen. Inkl. aller neuen Features und Komponenten. Aktuell inkl. Material Design.
+      logo:        https://m.media-amazon.com/images/I/71Wv+d6oP6L._SY466_.jpg
+      url:         https://www.amazon.de/Angular-JavaScript-Framework-Einf%C3%BChrung-fortgeschrittene-TypeScript-Techniken/dp/3836282437?pd_rd_w=wNP84&content-id=amzn1.sym.d6531279-1f86-4ae1-b1f7-8ab9db04b1a0&pf_rd_p=d6531279-1f86-4ae1-b1f7-8ab9db04b1a0&pf_rd_r=C4FQYAPCP9D2V5SHT98M&pd_rd_wg=bRRSK&pd_rd_r=fe1ada5d-80d1-45ad-9d50-08a5a212a5db&pd_rd_i=3836282437&psc=1&linkCode=ll1&tag=cmsworkbench-21&linkId=75e78faecb54ed9d805126e614313433&language=de_DE&ref_=as_li_ss_tl
+      
+    - cta:
+      title:       ChatGPT - Alltägliche Aufgaben mit Prompts meistern
+      description: Du möchtest wissen, wie du KI richtig nutzt und davon profitieren kannst? Dann wird dir dieses Workbook eine große Hilfe sein. Rainer Hattenhauer zeigt anhand einer Vielzahl praktischer Beispiele aus den unterschiedlichsten Anwendungsbereichen ganz konkret, wie KI dein Leben erleichtern kann. Egal ob du Texte verfassen, recherchieren, Bilder generieren oder deinen eigenen Programmcode erstellen möchtest. Hier kannst du auch ohne Vorkenntnisse direkt loslegen und die gängigen KI-Frontends ausprobieren. Inklusive ChatGPT, DALL-E 2, Midjourney, DeepL Write etc. 
+      logo:        https://m.media-amazon.com/images/I/71uij82hprL._SY466_.jpg
+      url:         https://www.amazon.de/dp/3836297337?psc=1&pd_rd_i=3836297337&pd_rd_w=RlYA9&content-id=amzn1.sym.6ffc9ff7-fa31-49da-8594-196e74bcf61e&pf_rd_p=6ffc9ff7-fa31-49da-8594-196e74bcf61e&pf_rd_r=5BWZ5EC15ZET2ECESCWE&pd_rd_wg=EPAXp&pd_rd_r=164c6f72-aaba-4984-bf76-522dfeed34e6&s=books&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&linkCode=ll1&tag=cmsworkbench-21&linkId=b0d49fa41273f2ad8d8775ec0d87f7a8&language=de_DE&ref_=as_li_ss_tl
+      
+    - cta:
+      title:       Mit Unity ganz ohne Vorkenntnisse eigene Spiele entwickeln
+      description: Nutzen Sie die geniale Game Engine, um eigene Spiele zu entwickeln! Von der ersten Scene bis zum komplexen Multiplayer-Spiel zeigt Ihnen Erfolgsautor Thomas Theis Schritt für Schritt, wie es geht. Mit dem integrierten C#-Kurs lernen Sie alle Objekte und Befehle direkt so kennen, wie Sie in Unity-Skripten aussehen - ganz ohne Vorkenntnisse und externe Software! 
+      logo:        https://m.media-amazon.com/images/I/71fuwMwoRUL._SY466_.jpg
+      url:         https://www.amazon.de/Einstieg-Unity-Computerspiel-Programmieranf%C3%A4nger-Beispiel-Games/dp/3836292645?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1Y44M1HQ5GXX6&dib=eyJ2IjoiMSJ9.l4waJ50Ue79XOiTNBeBKmCYv8Asep_sRQjuPwi8C-NyLRdIhlgxs16iTb1JsZ9DkKHhIYkLgbQaWM4S1Lh6Ob8zJtJsSdPE_VhNt7VecyUkrKODfa1lPYa7sqb7STff9lop8l5NQ1MeX1Uwi6eGpmIlLIbCApcc6t7NITW0mnVzzAVPe6acCQb_VhLpgKpD_xQuK0et3Wb2XKqzCB60CwT7pcT4aJ_bj3SErGSzH5w4.P34apUo6Ai9ydRqbnU73aNfqxrilpIPFkp3fVhhA_tU&dib_tag=se&keywords=programmieren+buch&qid=1720502745&s=books&sprefix=programmieren+buch%2Cstripbooks%2C163&sr=1-17&linkCode=ll1&tag=cmsworkbench-21&linkId=6cd1e7b608c18ba51365a58d0a3077e6&language=de_DE&ref_=as_li_ss_tl
+      
+    - cta:
+      title:       VBA mit Excel - Der leichte Einstieg - Vom ersten Makro zur eigenen Eingabemaske
+      description: Erweitern Sie den Funktionsumfang von Excel, indem Sie z. B. Routineaufgaben mit Makros erledigen, benutzerdefinierte Dialogfenster und Eingabemasken erstellen oder Ihre eigenen Funktionen programmieren. Dieses Buch richtet sich an Excel-Anwender, die in die VBA-Programmierung einsteigen möchten, aber noch keinerlei Vorkenntnisse besitzen. Es führt Sie Schritt für Schritt und mit vielen Beispielen in die Grundlagen der VBA-Programmierung ein und zeigt, wie Sie in VBA mit Excel-Objekten, z. B. Tabellenblättern, Zellen und Zellbereichen umgehen. Erfahren Sie außerdem, wie Sie mit UserForms*, Steuerelementen und VBA-Anweisungen eine komfortable Benutzeroberfläche für viele Zwecke und auch für ungeübte Excel-Anwender erstellen.
+      logo:        https://m.media-amazon.com/images/I/71yucVGtOyL._SY466_.jpg
+      url:         https://www.amazon.de/dp/3832803033?psc=1&pd_rd_i=3832803033&pd_rd_w=wcFWB&content-id=amzn1.sym.6ffc9ff7-fa31-49da-8594-196e74bcf61e&pf_rd_p=6ffc9ff7-fa31-49da-8594-196e74bcf61e&pf_rd_r=VYNJ46DSHP14EFK8BJV1&pd_rd_wg=hN6CE&pd_rd_r=e2049839-2a75-4826-83f2-c3dfc5ab6526&s=books&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&linkCode=ll1&tag=cmsworkbench-21&linkId=62cfdd91b827524643ef4d2b536f2f6e&language=de_DE&ref_=as_li_ss_tl
+      
+    - cta:
+      title:       KI für Content Creation - Texte, Bilder, Audio und Video erstellen mit ChatGPT und Co
+      description: Nominiert für den Tiger-Award 2024 in der Kategorie „Business Bestseller“. Schnell und effektiv Content erstellen mit ChatGPT und DeepL. Texte optimieren für SEO mit Semrush und Yoast. Bilder, Audio und Videos kreieren mit DALL-E, Midjourney, Adobe Firefly, Adobe Podcast u.v.m. KI-Tools sinnvoll in den gesamten Content-Marketing-Prozess integrieren. KI-Technologien wie ChatGPT und Co. erleichtern Content Creation um ein Vielfaches – Sie müssen nur wissen, wie diese Tools effektiv eingesetzt werden können.
+      logo:        https://m.media-amazon.com/images/I/81ZOSHE98nL._SY466_.jpg
+      url:         https://www.amazon.de/KI-f%C3%BCr-Content-Creation-erstellen/dp/3747508200?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=TW7A51HY2YBA&dib=eyJ2IjoiMSJ9.SGpujW6gwf3wxG9kknJyRJTcwhDPrRwvkfgH-FsO2e0QXwgjXrTmDUAv-ZZB_xcorga62ia7Yutz0FRte6xAik-YkAMz-EfJOyNYWamGF0yHQUja_8wfkT3QckqBUGyY-gnJJW3GNSCZ0mOv6hQJPllT276Wq3kGeGXU2M_w-GziVUyv6lti6ldEm_UkKAA9rNNnxpggnuMde0Whn5gzbr0ERqrQdjv31j7wMkakgA4.f5dcjuma64m8NiK4PQoAS58cj-9uNqCuN2zfcf9akyg&dib_tag=se&keywords=content+creation+ki&qid=1720504244&s=books&sprefix=content+creation+ki%2Cstripbooks%2C146&sr=1-1&linkCode=ll1&tag=cmsworkbench-21&linkId=793567d05b5d6ef6040fb380f1473863&language=de_DE&ref_=as_li_ss_tl

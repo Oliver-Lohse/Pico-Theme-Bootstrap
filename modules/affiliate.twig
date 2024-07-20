@@ -1,0 +1,26 @@
+{#------------------------------------------------------------------------------------------------------#}
+{# Affiliate                                                                                            #}
+{# ---------                                                                                            #}
+{# Generiert zufällige Texteinblendungen (Affiliates oder CTA) auf der Seite. Dafür müssen einige Daten #}
+{# in der 'pico-theme.yml' eingetragen werden (cta[title, description, logo, url]).                     #}
+{#------------------------------------------------------------------------------------------------------#}
+
+<!-- Affiliate -->
+	{% set item = random(config.theme_config.affiliate) %}
+	<div class="container-fluid py-5 bg-light">
+		<div class="container">
+			<div class="row">
+			
+				<div class="col-sm-2 text-center">
+					<a href="{{ item.url }}"><img src="{{ item.logo }}" class="img-fluid mb-4"></a>
+				</div>
+				
+				<div class="col-sm">
+					<p><strong>{{ item.title }}</strong> &ensp; - &ensp; {{ item.description }}</p>
+					<p class="small opacity-50"><em>Wir sind Mitglied im Amazon.Partnernet und können mit Affiliate-Links den Betrieb der Webseite etwas unterstützen, für Sie als Leser ist das natürlich vollkommen kostenlos.</em></p>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+<!-- Affiliate -->

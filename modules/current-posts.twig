@@ -1,0 +1,43 @@
+{#------------------------------------------------------------------------------------------------------#}
+{# Beiträge des aktuellen Ordners                                                                       #}
+{# ------------------------------                                                                       #}
+{# Zeigt die Beiträge an, die in dem aktuellen Verzeichnis existieren. Von der Anzeige sind wie gewohnt #}
+{# index.md und Dateien mit dem Hidden-Attribut ausgeschlossen. Da in jedem Verzeichnis auch beiträge   #}
+{# liegen, muss keine Ausnahmeregelung, wie bei der Kategorie, entwickelt werden. Das Segment wird also #}
+{# in allen INDEX angezeigt.                                                                            #}
+{#------------------------------------------------------------------------------------------------------#}
+
+<!-- Posts this Stage -->
+    {% set post_count = 0 %}
+    {% for page in pages(current_page.id, depth=0)|sort_by("time")|reverse if not page.hidden and page.meta.template != 'index' %}
+    {% set post_count = post_count+1 %}
+    {% endfor %}
+
+    {% if post_count > 0 %}
+        <div class="container-fluid py-5 bg-light">
+            <div class="container g-0">
+
+                <p class="lead text-center text-secondary mb-5">Beiträge in: "{{ current_page.id|replace({'/index': ''}) }}"</p>
+
+                <div class="row">
+                    {% for page in pages(current_page.id, depth=0)|sort_by("time")|reverse if not page.hidden and page.meta.template != 'index' %}
+
+                        <div class="col-sm-3">
+                            <div class="text-center"><img src="{{assets_url}}/{{page.meta.logo}}" class="img-fluid mb-3 w-50"></div>
+                            <a href="{{ page.url }}"><h2 class="mb-3 fs-4">{{ page.title }}</h2></a>
+                            <p class="small">
+                                <span class="small opacity-50">
+                                    <i class="bi bi-tags-fill"></i> &ensp; {{ page.meta.tags|replace({',': ' '}) }}
+                                </span>
+                            </p>
+                            <hr>
+                            <p>{{ page.description }}</p>
+                        </div>
+
+                    {% endfor %}
+                </div>
+
+            </div>
+        </div>
+    {% endif %}
+<!-- Posts this Stage -->

@@ -1,0 +1,42 @@
+{#------------------------------------------------------------------------------------------------------#}
+{# Folders, Kategorie                                                                                   #}
+{# ------------------                                                                                   #}
+{# Sofern in diesem Verzeichnis weitere Ordner liegen (Prüfung), werden diese mit Bild und Anleser      #}
+{# angezeigt.                                                                                           #}
+{#------------------------------------------------------------------------------------------------------#}
+
+<!-- Folders, Kategories -->    
+    {% set categorie_count = 0 %}
+    {% for page in pages(current_page.id, depth=0) if not page.hidden and page.meta.template == 'index' %}
+    {% set categorie_count = categorie_count+1 %}
+    {% endfor %}
+
+    {% if categorie_count > 0 %}
+        <div class="container-fluid py-5">
+            <div class="container g-0">
+
+                {% if config.theme_config.kategorie.heading %}
+                    <p class="lead text-center text-secondary mb-5">Kategorien in: "{{ current_page.id|replace({'/index': ''}) }}"</p>
+                {% endif %}
+
+                <div class="row">
+                {% for page in pages(current_page.id, depth=0)|sort_by("time")|reverse if not page.hidden and page.meta.template == 'index' %}
+
+                    {% set size = config.theme_config.kategorie.weights[loop.index-1] %}
+
+                    <div class="col-sm-{{size}}">
+                        {% if config.theme_config.kategorie.logo %}
+                            <div class="text-center"><img src="{{assets_url}}/{{page.meta.logo}}" class="img-fluid mb-3 w-50"></div>
+                        {% endif %}
+                        <a href="{{ page.url }}"><h2 class="mb-3 fs-4">{{ page.title }}</h2></a>
+                        <hr>
+                        <p>{{ page.description }}</p>
+                    </div>
+
+                {% endfor %}
+                </div>
+
+            </div>
+        </div>
+    {% endif %}
+<!-- Folders, Kategories -->

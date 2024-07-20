@@ -1,0 +1,40 @@
+{#------------------------------------------------------------------------------------------------------#}
+{# 404                                                                                                  #}
+{# ----                                                                                                 #}
+{# Bündelt alle Module aus dem Ordner 'modules' in einem Layout und zeigt einen einzelnen Beitrag an.   #}
+{#------------------------------------------------------------------------------------------------------#}
+
+<!DOCTYPE html>
+    <html lang="de">
+
+        {% include 'modules/html-head.twig' %}
+
+    <body class="fs-5">
+
+        {% include 'modules/title-page.twig' %}
+
+        {% include 'modules/breadcrumb.twig' %}
+
+        {% include 'modules/affiliate.twig' %}
+
+        <div class="container mt-5">
+        <div class="row mb-5">
+            <div class="col-sm-3">
+                <ul>
+                    {% for page in pages(current_page.id)|sort_by("time")|reverse if not page.hidden %}
+                    <li><a href="{{ page.url }}">{{page.title}}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-sm-9">
+                {{content}}
+            </div>
+        </div>
+        </div>
+
+    {% include 'modules/social.twig' %}
+
+    {% include 'modules/footer.twig' %}
+
+</body>
+</html>

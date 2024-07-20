@@ -1,0 +1,34 @@
+{#------------------------------------------------------------------------------------------------------#}
+{# Index                                                                                                #}
+{# -----                                                                                                #}
+{# Bündelt alle Module aus dem Ordner 'modules' in einem Layout und zeigt den Inhalt der Startseite     #}
+{# und auch den Inhalt einer Kategorie-Seite.                                                           #}
+{#------------------------------------------------------------------------------------------------------#}
+
+<!DOCTYPE html>
+    <html lang="de">
+
+        {% include 'modules/html-head.twig' %}
+
+    <body class="fs-5">
+
+        {% include 'modules/title-site.twig' %}
+
+        {% include 'modules/breadcrumb.twig' %}
+
+        {% include 'modules/sticky.twig' %}
+
+        {% include 'modules/current-folders.twig' %}
+    
+        {% include 'modules/current-posts.twig' %}
+
+        {% include 'modules/affiliate.twig' %}
+
+        {% include 'modules/content-index.twig' %}
+
+        {% include 'modules/social.twig' %}
+
+        {% include 'modules/footer.twig' %}
+    
+    </body>
+</html>

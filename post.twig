@@ -1,0 +1,31 @@
+{#------------------------------------------------------------------------------------------------------#}
+{# Post                                                                                                 #}
+{# ----                                                                                                 #}
+{# Bündelt alle Module aus dem Ordner 'modules' in einem Layout und zeigt einen einzelnen Beitrag an.   #}
+{#------------------------------------------------------------------------------------------------------#}
+
+<!DOCTYPE html>
+    <html lang="de">
+
+        {% include 'modules/html-head.twig' %}
+
+    <body class="fs-5">
+
+        {% include 'modules/title-page.twig' %}
+
+        {% include 'modules/breadcrumb.twig' %}
+
+        {% include 'modules/affiliate.twig' %}
+
+        {% include 'modules/content-post.twig' %}
+        
+        {% include 'modules/affiliate.twig' %}
+
+        {% include 'modules/social.twig' %}
+
+        {% include 'modules/related-posts.twig' %}
+
+        {% include 'modules/footer.twig' %}
+
+    </body>
+</html>
