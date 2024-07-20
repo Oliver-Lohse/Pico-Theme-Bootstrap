@@ -87,6 +87,20 @@ Das Theme blendet eine Social-Bar mit Icons für:
 
 im unteren Bereich ein.
 
+## RSS-Feed
+
+Aktuell kann zwischen zwei Arten des RSS-Feed gewählt werden, zum einen wird der klassische Feed die neusten Beiträge senden und zum anderen sendet er einen Feed mit den hervorgehobenen Beiträge an die Leser - dies ist die bessere Variante, da der Redakteur deutlich mehr Kontrolle über den Output der Seite hat.
+
+Die Einstellung kann mit:
+
+    Template: feed-sticky
+
+oder
+
+    Template: feed-default
+
+im Beitrag feed.md eingestellt werden.
+
 ## Plugins
 
 Das Theme nutzt das Plugin `TableOfContents`
