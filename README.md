@@ -17,7 +17,7 @@ Das Theme zeigt Affiliates in Kategorien und Beiträgen an. Affiliates werden in
           ...
           ...
 
-## CTA und Geo
+## CTA und Geo-Position
 
 Beiträge können zusätzliche CTA (Call to Actions) oder auch Geo-Koordinaten aufnehmen und durch das Theme anzeigen lassen. Der Metabereich der Beiträge wird daher wie folgt aufgebaut:
 
@@ -41,3 +41,10 @@ Beiträge können zusätzliche CTA (Call to Actions) oder auch Geo-Koordinaten a
     Description:        Beschreibung des Beitrags, max 160 Char...
     ---
     ...Beitragstext... ... ...
+    ...
+
+Das Theme versucht bei CTA-Links automatisch ein passendes Icon zuzusteuern (z.B. GitHub.com,...). Geo-Daten können angegeben werden, wenn beispielsweise Locationen für Events im Beitrag erwähnung finden sollen.
+
+## Sticky
+
+Beiträge können auf der Startseite nach oben geschoben werden, sofern diese mit dem Status `Sticky: true` versehen sind.
