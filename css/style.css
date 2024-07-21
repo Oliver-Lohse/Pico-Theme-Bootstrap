@@ -11,21 +11,7 @@ a {
     background-color:   #3b9ab4;
     border:             1px solid #3b9ab4;
     border-radius:      0px;
-    _border-left:        0px solid #ffffff;
-    _border-bottom:      10px solid #ffffff;
-    _border-right:       10px solid #3b9ab4;
 }
-
-/* --- Plugin: PageList --- */
-.is-active a{
-    color:              #333333;
-}
-.page-list {
-    font-size:          0.8em;
-    list-style:         none;
-    padding-left:       0em;
-}
-/* --- Plugin: PageList --- */
 
 blockquote {
     border-left:        10px solid #3b9ab4;
