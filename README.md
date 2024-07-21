@@ -15,7 +15,7 @@ Dieses Theme basiert auf dem CSS-Framework **Bootstrap** und bildet eine grundle
 - 404 Error-Page
 - global_author statt einen dedizierten Autor im Text
 
-![Screenshot](https://repository-images.githubusercontent.com/831518401/7548a10b-171e-42c9-b91d-330fb68bc25b)
+![Screenshot](https://repository-images.githubusercontent.com/831518401/6dbdfc05-2aec-46b2-8156-d0fb35c7e3dd)
 
 >Die Maximalausprägung kann bei Bedarf schrittweise reduziert werden, indem einige Funktionen deaktiviert werden.
 
