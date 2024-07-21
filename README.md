@@ -14,6 +14,7 @@ Dieses Theme basiert auf dem CSS-Framework **Bootstrap** und bildet eine grundle
 - abonierbarer RSS-Feed
 - 404 Error-Page
 - global_author statt einen dedizierten Autor im Text
+- nutzung des beliebten Bootstrap CSS (mit leichten Anpassungen)
 
 ![Screenshot](https://repository-images.githubusercontent.com/831518401/e42a415d-1181-47db-8f3f-6ed60c2713ee)
 _Abbildung: Artikel-Template_
