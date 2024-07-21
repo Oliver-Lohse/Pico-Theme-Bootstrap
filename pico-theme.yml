@@ -36,9 +36,9 @@ social:
     rss:           https://cmsworkbench.de/feed
     github:        https://github.com/Oliver-Lohse
 
-replacetoken:
-    primary:       das ist ein Beispieltext bzw. Beispielslogan
-    secondary:     ein zweiter Slogan
+#replacetoken:
+#    primary:       das ist ein Beispieltext bzw. Beispielslogan
+#    secondary:     ein zweiter Slogan
     
 affiliate:
     - cta: 
