@@ -16,6 +16,7 @@ Dieses Theme basiert auf dem CSS-Framework **Bootstrap** und bildet eine grundle
 - global_author statt einen dedizierten Autor im Text
 
 ![Screenshot](https://repository-images.githubusercontent.com/831518401/e42a415d-1181-47db-8f3f-6ed60c2713ee)
+_Abbildung: Artikel-Template_
 
 >Die Maximalausprägung kann bei Bedarf schrittweise reduziert werden, indem einige Funktionen deaktiviert werden.
 
