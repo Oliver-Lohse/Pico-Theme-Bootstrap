@@ -21,9 +21,13 @@
 
     {# ...oder so #}
 
-    <ul class="page-list">
-        {% for page in pages(path)|sort_by("title") if not page.hidden %}           {# Nutzung ohne Plugin #}
-            <li><a href="{{ page.url }}" class="small">{{ page.title }}</a></li>
+    <ul class="pages-list">
+        {% for page in pages(path)|sort_by("title") if not page.hidden %}
+            {% if page.title == current_page.title %} 
+                <li class="active"> {{ page.title }} </li>
+            {% else %}
+                <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+            {% endif %}
         {% endfor %}
     </ul>
 <!-- Posts in Dir -->

@@ -13,6 +13,27 @@ a {
     border-radius:      0px;
 }
 
+/* --- der Style zum gleichnamigen Twig-Modul --- */
+.pages-list {
+    list-style:         none;
+    padding-left:       0px;
+    font-size:          0.8em;
+}
+.pages-list .active {
+    color:              #ffffff;
+    margin-top:         0.5em;
+    margin-bottom:      0.5em;
+    _font-weight: bolder;
+    font-size:          1.2em;
+    border-left:        1px solid #3b9ab4;
+    padding-left:       1em;
+    background-color:  #3b9ab4;
+    padding-top:        0em;
+    padding-bottom:     0.8em;
+    border-right:       15px solid #ffffff;
+    border-top:         15px solid #3b9ab4;
+}
+
 blockquote {
     border-left:        10px solid #3b9ab4;
     border-radius:      4px;
